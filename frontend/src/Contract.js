@@ -1,4 +1,4 @@
-import React from 'react';
+import {React} from 'react';
 import './Contract.css';
 
 const contractData = [
@@ -7,9 +7,10 @@ const contractData = [
 ];
 
 const Contract = () => {
-  const handleViewTransactions = (contractIndex) => {
+
+  const handleViewTransactions = () => {
     // Handle viewing transactions for the selected contract
-    console.log(`Viewing transactions for Contract ${contractIndex + 1}`);
+    window.location.href = '/transcation';
   };
 
   return (
@@ -23,7 +24,7 @@ const Contract = () => {
             <p><strong>Generator:</strong> {contract.generator}</p>
             <p><strong>Expiry Date:</strong> {contract.expiryDate}</p>
             <p><strong>Last Payment:</strong> {contract.lastPayment}</p>
-            <button onClick={() => handleViewTransactions(index)}>View Transactions</button>
+            <button onClick={() => handleViewTransactions()}>View Transactions</button>
           </div>
         ))}
       </div>
