@@ -1,0 +1,52 @@
+.tokens-container {
+  text-align: center;
+  padding: 50px;
+}
+
+.tokens-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.token-item {
+  width: 220px;
+  margin: 15px;
+  padding: 10px;
+  background-color: #f0f0f0;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+  animation: fadeInUp 0.5s ease-out;
+}
+
+.token-item:hover {
+  background-color: #e0e0e0;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.token-name {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.wallet-id {
+  font-size: 14px;
+  color: #555;
+}

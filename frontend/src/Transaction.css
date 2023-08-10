@@ -1,0 +1,34 @@
+.transaction-container {
+    text-align: center;
+    padding: 40px;
+  }
+  
+  .transaction-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    margin-top: 20px;
+  }
+  
+  .transaction-item {
+    border: 1px solid #ddd;
+    padding: 20px;
+    width: 300px;
+    transition: transform 0.3s ease-in-out;
+    cursor: pointer;
+  }
+  
+  .transaction-item:hover {
+    transform: translateY(-5px);
+  }
+  
+  .transaction-item p {
+    font-size: 16px;
+    margin-bottom: 5px;
+  }
+  
+  .transaction-item strong {
+    font-weight: bold;
+  }
+  
